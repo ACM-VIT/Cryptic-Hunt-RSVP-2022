@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Harshal from './components/Harshal/Harshal';
 
 function App() {
   return (
-    <h1 className="text-4xl p-6 text-orange-600 underline">
-    Hello world!
-    </h1>
+    <>
+      <Harshal />
+    </>
   );
 }
 

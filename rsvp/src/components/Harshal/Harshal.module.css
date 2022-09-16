@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+
+.paragraph{
+  background-color: black;
+}
+.registerDiv {
+  padding: 0px;
+  gap: 10px;
+  margin: 0 0;
+
+  position: absolute;
+  width: 169.46vh;
+  height: 62.59vh;
+  margin-left: calc(50% - 169.46vh / 2);
+  margin-top: calc(50% - 62.59vh / 2 + 41.3vh);
+
+  /* Cryptic_orange */
+
+  background: #ff7a01;
+  border-radius: 16px;
+}
+
+.registerHeadline {
+  width: 67.7vh;
+  height: 8.24vh;
+
+  /* Heading / H3 */
+  position: absolute;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 6.1vh;
+  line-height: 8.24vh;
+  margin-top: 6.1vh;
+  margin-left: 7.32vh;
+
+  color: #ffffff;
+
+}
+
+.registerPara {
+  width: 67.78vh;
+  height: 24.42vh;
+
+  /* Lead / Lead 1 */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.74vh;
+  line-height: 4.88vh;
+  /* or 178% */
+
+  font-feature-settings: "salt" on, "liga" off;
+  position: absolute;
+  margin-top: 19.23vh;
+  margin-left: 7.32vh;
+  /* Text / Gray 7 */
+
+  color: #f1f2f6;
+
+}
+
+.formInput {
+  padding: 14px 16px;
+  gap: 10px;
+  position: absolute;
+  margin-top: 48.54vh;
+  margin-left: 7.32vh;
+
+  width: 37.86vh;
+  height: 7.93vh;
+
+  /* Text / Gray 100 */
+
+  background: #f4f5f7;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.formInput:placeholder-shown {
+  font-family: "Inter";
+}
+
+.registerButton {
+  padding: 14px 24px;
+  gap: 10px;
+  position: absolute;
+  margin-top: 48.85vh;
+  margin-left: 45.19vh;
+
+  width: 15.87vh;
+  height: 7.93vh;
+
+  /* Text / Gray 900 */
+
+  background: #18191F;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.buttonText {
+  width: 8.54vh;
+  height: 3.05vh;
+
+  /* Label / Medium Label */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: 'salt' on, 'liga' off;
+
+  /* Default / White */
+
+  color: #FFFFFF;
+
+}
+
+.phoneMockup {
+  padding: 0px;
+  position: absolute;
+  width: 540px;
+  height: 100.87vh;
+  margin-left: 87.022vh;
+  margin-top: -19.23vh;
+  background: url('../../assets/Phone\ Mockup.svg') no-repeat;
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (max-width:1400px) {
+  .paragraph {
+    margin-left: 41.115vh;
+    margin-top: 33vh;
+  }
+}
+
+@media all and (max-width:1300px) {
+  .registerDiv {
+    height: 169.46vh;
+    width: 62.59vh;
+  }
+}
+
+@media all and (max-width:900px) {
+  .heading {
+    margin-left: 26vh;
+  }
+
+  .paragraph {
+    margin-left: 30vh;
+    margin-top: 33vh;
+  }
+
+  .registerDiv {
+    flex-direction: column;
+  }
+}

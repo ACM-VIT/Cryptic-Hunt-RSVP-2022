@@ -1,0 +1,53 @@
+.orangeContainer {
+    /* width: 1110px;
+    height: 410px; */
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputBox {
+    padding: 14px 16px;
+}
+
+/* .registerContent {
+    display: flex;
+    flex-direction: column;
+} */
+
+.image {
+    height: 100vh;
+}
+
+.registerPhone {
+    background: url('../../assets/Phone\ Mockup.svg') no-repeat;
+    height: 100vh;
+    width: 100vh;
+}
+
+@media all and (max-width:1200px) {
+    .flexContainer {
+        flex-direction: column-reverse;
+    }
+
+    .inputBox:placeholder-shown {
+        font-size: 25px;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .registerPara {
+        width: 67vh;
+        height: 40vh;
+    }
+}
+
+@media (width: 1440px) {
+    .registerHeading {
+        margin-left: -15vw;
+    }
+}
