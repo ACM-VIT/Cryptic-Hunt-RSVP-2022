@@ -42,6 +42,7 @@
 
 .store__badge {
   margin-bottom: 7.5vh;
+  display: flex;
 }
 
 .badge {
@@ -66,11 +67,12 @@
   .details {
     font-size: 18px;
     line-height: 27px;
-    width: 60vw;
+    width: 80vw;
   }
   .explore {
     font-size: 42px;
     line-height: 63px;
+    margin: 5px 25px;
   }
 
   .appDemo {

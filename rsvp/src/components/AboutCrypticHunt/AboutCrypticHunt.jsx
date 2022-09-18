@@ -1,6 +1,7 @@
-import "./AboutCrypticHunt.css";
-import storeBadge from "../../assets/app-playstore-badge.svg";
 import appDemo from "../../assets/cryptichunt-demo.svg";
+import appStore from "../../assets/App Store Badge.svg";
+import playStore from "../../assets/Google Play Badge.svg";
+import "./AboutCrypticHunt.css";
 const AboutCrypticHunt = () => {
   return (
     <section className="hero">
@@ -11,9 +12,12 @@ const AboutCrypticHunt = () => {
         </p>
       </div>
       <div className="store__badge">
-        <a href="#Store-Link">
+        <a href="#app-store">
+          <img src={appStore} className="badge" alt="App and Play Store Demo" />
+        </a>
+        <a href="#play-store">
           <img
-            src={storeBadge}
+            src={playStore}
             className="badge"
             alt="App and Play Store Demo"
           />
@@ -22,12 +26,14 @@ const AboutCrypticHunt = () => {
       <div className="app__demo">
         <img src={appDemo} className="appDemo" alt="Cryptic Hunt App Demo" />
       </div>
-      <p className="explore">Find and explore a new world</p>
+      <p className="explore">Find and explore a new world within VIT!</p>
       <p className="details">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis blandit
-        neque viverra proin porta placerat. Diam et tempus sollicitudin eget
-        odio. viverra proin porta placerat. Diam et tempus sollicitudin eget
-        odio.
+        ACM-VIT's Hybrid Cryptic Hunt is an elaborate Treasure Hunt where our
+        participants will be given questions to solve using skills from the
+        cryptography and cybersecurity domains. Through the Hunt, the
+        participants will get to explore both the world of cybersec and that of
+        VIT, in search of the answers to your problems in the most unexpected
+        places! Date: 30th September to 1st October Time: 8:00 A.M. TO 4:00 P.M.
       </p>
     </section>
   );

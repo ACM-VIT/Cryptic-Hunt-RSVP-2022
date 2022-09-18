@@ -3,18 +3,17 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const menuRef = useRef();
-  const headRef = useRef();
+  const burgerRef = useRef();
   const handleClick = (event) => {
     menuRef.current.classList.toggle("active");
-    headRef.current.classList.toggle("heading-increase");
-    console.log(menuRef.current);
+    burgerRef.current.classList.toggle("is-active");
   };
   return (
     <nav className="navbar">
-      <div className="logo" ref={headRef}>
-        logo
+      <div className="logo">
+        <h1 className="heading-logo">Cryptic Hunt</h1>
       </div>
-      <div className="burger__menu" onClick={handleClick}>
+      <div className="burger__menu" ref={burgerRef} onClick={handleClick}>
         <div className="burger__line"></div>
         <div className="burger__line"></div>
         <div className="burger__line"></div>
