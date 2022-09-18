@@ -24,6 +24,16 @@
   font-size: 21.3104px;
   line-height: 32px;
   transition: 0.2s ease-in;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo > * {
+  margin: 0px 4px;
+}
+
+.cryptic-hunt-logo {
+  height: 35px;
 }
 
 .nav__links {
@@ -33,7 +43,7 @@
   font-size: 14px;
   line-height: 20px;
   color: white;
-  transition: 0.2s ease-in;
+  transition: 0.2s ease;
   margin: 0px 12px;
 }
 

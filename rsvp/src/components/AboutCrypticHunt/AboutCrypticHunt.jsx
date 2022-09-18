@@ -33,7 +33,10 @@ const AboutCrypticHunt = () => {
         cryptography and cybersecurity domains. Through the Hunt, the
         participants will get to explore both the world of cybersec and that of
         VIT, in search of the answers to your problems in the most unexpected
-        places! Date: 30th September to 1st October Time: 8:00 A.M. TO 4:00 P.M.
+        places!
+        <span>
+          Date: 30th September to 1st October Time: 8:00 A.M. TO 4:00 P.M.
+        </span>
       </p>
     </section>
   );

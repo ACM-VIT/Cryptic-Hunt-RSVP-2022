@@ -37,7 +37,14 @@
   display: flex;
   align-items: center;
   text-align: center;
-  width: 43vw;
+  width: 60vw;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.details span {
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 .store__badge {
@@ -55,7 +62,7 @@
   font-weight: 600;
   font-size: 56px;
   line-height: 84px;
-  margin-bottom: 7.5vh;
+  margin-bottom: 4vh;
   text-align: center;
 }
 

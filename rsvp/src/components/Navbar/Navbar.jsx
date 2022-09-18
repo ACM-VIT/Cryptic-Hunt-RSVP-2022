@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import crypticHuntLogo from "../../assets/cryptic-logo.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -11,6 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
+        <img src={crypticHuntLogo} alt="Logo" className="cryptic-hunt-logo" />
         <h1 className="heading-logo">Cryptic Hunt</h1>
       </div>
       <div className="burger__menu" ref={burgerRef} onClick={handleClick}>
