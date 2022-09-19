@@ -4,7 +4,7 @@ import playStore from "../../assets/Google Play Badge.svg";
 import "./AboutCrypticHunt.css";
 const AboutCrypticHunt = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="About">
       <div className="heading">
         <p>
           Get Ready for experiencing the excitment and thrill of hunt,{" "}
@@ -23,7 +23,7 @@ const AboutCrypticHunt = () => {
           />
         </a>
       </div>
-      <div className="app__demo">
+      <div className="app__demo__div">
         <img src={appDemo} className="appDemo" alt="Cryptic Hunt App Demo" />
       </div>
       <p className="explore">Find and explore a new world within VIT!</p>
