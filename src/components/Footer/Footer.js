@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "../../Styles/footer.css";
 
 import Instagram from "../../images/Instagram.svg";
@@ -7,44 +7,47 @@ import Twitter from "../../images/Twitter.svg";
 import Youtube from "../../images/Youtube.svg";
 import Component from "../../images/Component.svg";
 
-
 const Footer = () => {
   return (
-    <div className='top'>
-        <div className='leftSection'>
-      <div>
-        <a target="_blank" rel="noopener noreferrer" href="https://acmvit.in/">
-          <img src={Component} alt="ACM-Logo" />
-        </a>
-      </div>
-      <div className="footer1">
+    <div className="top">
+      <div className="leftSection">
         <div>
-          <p>Download Now</p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://acmvit.in/"
+          >
+            <img src={Component} alt="ACM-Logo" />
+          </a>
         </div>
-        <div>
-          <p>License</p>
+        <div className="footer1">
+          <div>
+            <p>Download Now</p>
+          </div>
+          <div>
+            <p>License</p>
+          </div>
         </div>
-      </div>
-      <div className="footer2">
-        <div className="footer2-inner">
-          <p>About</p>
+        <div className="footer2">
+          <div className="footer2-inner">
+            <p>About</p>
+          </div>
+          <div className="footer2-inner">
+            <p>Features</p>
+          </div>
+          <div className="footer2-inner">
+            <p>Pricing</p>
+          </div>
+          <div className="footer2-inner">
+            <p>Careers</p>
+          </div>
+          <div className="footer2-inner">
+            <p>Help</p>
+          </div>
+          <div className="footer2-inner">
+            <p>Privacy Policy</p>
+          </div>
         </div>
-        <div className="footer2-inner">
-          <p>Features</p>
-        </div>
-        <div className="footer2-inner">
-          <p>Pricing</p>
-        </div >
-        <div className="footer2-inner">
-          <p>Careers</p>
-        </div>
-        <div className="footer2-inner">
-          <p>Help</p>
-        </div>
-        <div className="footer2-inner">
-          <p>Privacy Policy</p>
-        </div>
-      </div>
       </div>
       <div className="social">
         <a
@@ -76,7 +79,7 @@ const Footer = () => {
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
