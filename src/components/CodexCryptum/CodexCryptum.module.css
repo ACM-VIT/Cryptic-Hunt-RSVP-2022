@@ -91,20 +91,45 @@
   }
 }
 
-@media all and (max-width: 500px) {
-  button {
-    margin-top: 3rem;
-  }
+@media (min-width:200px) and (max-width:370px) {
+    .inputBox {
+        width: inherit;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 270%;
+    }
 }
 
-@media (width: 600px) {
-  .inputBox {
-    margin-top: 110%;
-  }
+@media (min-width:370px) and (max-width:450px) {
+    .inputBox {
+        width: inherit;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 200%;
+    }
+}
+
+@media all and (max-width:500px) {
+    button {
+        margin-top: 3rem;
+    }
 }
 
 @media all and (min-width: 1500px) {
   .image {
     width: 34.4vw !important;
   }
+}
+
+@media all and (min-width:1500px) {
+    .image {
+        width: 34.4vw !important;
+    }
+}
+
+
+@media (width:393px) {
+    .inputBox {
+        margin-top: 180%;
+    }
 }

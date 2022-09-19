@@ -51,6 +51,12 @@
   }
 }
 
+@media (min-width:200px) and (max-width:400px) {
+    .orangeContainer{
+        height: 160vh;   
+    }
+}
+
 /* @media (width: 1440px) {
     .registerHeading {
         margin-left: -15vw;
@@ -76,16 +82,29 @@
   }
 }
 
-@media all and (max-width: 400px) {
-  .inputBox {
-    width: inherit;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-top: 100%;
-  }
+@media all and (min-width:700px) and (max-width:1200px) {
+    .orangeContainer {
+        height: 200vh;
+    }
 }
-@media all and (max-width: 500px) {
-  button {
-    margin-top: 3rem;
-  }
+
+@media all and (max-width:400px) {
+    .inputBox {
+        width: inherit;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 100%;
+    }
+}
+
+@media all and (max-width:500px) {
+    button {
+        margin-top: 3rem;
+    }
+}
+
+@media (width:375px){
+    .orangeContainer{
+        margin-top: 80vh;
+    }
 }
