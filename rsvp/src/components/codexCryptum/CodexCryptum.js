@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
-import classes from "./RegisterDiv.module.css";
+import classes from "./CodexCryptum.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import image from "../../assets/Phone Mockup.svg";
+import image from "../../assets/codexCryptum.svg";
 
 const RegisterDiv = () => {
   const handleSubmit = (e) => {
@@ -22,7 +22,7 @@ const RegisterDiv = () => {
           // className={`${classes.orangeContainer} ${`bg-crypticOrange mr-10 w-[130vh] h-[200vh] md:w-[165vh] lg:w-[180vh] md:h-[61.84vh] xxsm:h-[300vh]`}`}
           className={`${
             classes.orangeContainer
-          } ${`bg-crypticOrange mx-8 h-[200vh] md:h-[61.84vh] xxsm:h-[250vh] xsm:h-[180vh] md:mx-20 sm:h-[150vh] mod:h-[150vh]`}`}
+          } ${` mx-8 h-[200vh] md:h-[61.84vh] xxsm:h-[250vh] xsm:h-[180vh] md:mx-20`}`}
         >
           <div className="flex flex-col-reverse md:flex-row lg:flex-row">
             <div className="flex flex-col">
@@ -33,10 +33,10 @@ const RegisterDiv = () => {
                   data-aos-anchor-placement="top-bottom"
                   style={{ fontFamily: "Inter" }}
                   className={`${
-                    classes.registerHeading
-                  } ${`font-extrabold relative text-2xl xsm:text-3xl mod:text-5xl xxsm:text-3xl text-center text-[#fff] md:text-4xl md:mt-[8vh] ml-[5vw]`}`}
+                    classes.codexHeading
+                  } ${`font-extrabold relative text-2xl xsm:text-3xl mod:text-5xl xxsm:text-3xl text-center text-crypticOrange md:text-4xl md:mt-[8vh] ml-[5vw] `}`}
                 >
-                  Cryptic Hunt App
+                  Codex Cryptum
                 </h1>
               </div>
               <div className="flex flex-row">
@@ -47,12 +47,18 @@ const RegisterDiv = () => {
                   style={{ fontFamily: "Inter" }}
                   className={`${
                     classes.registerPara
-                  } ${`w-[100vh] h-[24.13vh] mt-[10vh] ml-[5vw] font-normal text-center md:text-normal text-3xl text-[#fff] md:text-base md:text-left md:mt-[9vh] xxsm:p-3 md:p-0`}`}
+                  } ${`w-[100vh] h-[24.13vh] mt-[10vh] ml-[5vw] font-normal text-center md:text-normal text-3xl text-black md:text-base md:text-left md:mt-[9vh] xxsm:p-3 md:p-0`}`}
                 >
-                  The Cryptic Hunt app is your one stop destination for all your
-                  Hunt related needs. Get on the trail with the leaderboard,
-                  questions and timeline just one click away! What are you
-                  waiting for download the app now!
+                  Codex Cryptum 2.0 Codex Cryptum ‘22 is the second edition of
+                  the ACM’s cryptography workshop which is an incredibly
+                  fun-filled and informative session where the participants will
+                  get an opportunity to learn, develop and refine their skills
+                  in the field of cybersecurity and cryptography. The workshop
+                  is a pre-graVITas ‘22 event.
+                  <br />{" "}
+                  <b>
+                    Date: 25th September 2022, Sunday Time: 2.00 P.M. to 6.00P.M
+                  </b>
                 </p>
               </div>
               <div className={`${classes.formDiv} ${`flex`}`}>
@@ -68,13 +74,13 @@ const RegisterDiv = () => {
                       placeholder="Your email address here"
                       className={`${
                         classes.inputBox
-                      } ${`relative w-[40vh] h-[10vh] md:h-[7.84vh] ml-[9vh] mt-[25vh] md:mt-[15vh]`}`}
+                      } ${`relative w-[40vh] h-[10vh] md:h-[7.84vh] ml-[9vh] mt-[25vh] md:mt-[15vh] border-2 border-crypticOrange`}`}
                     ></input>
                     <button
                       data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="2000"
-                      className="h-[9vh] w-[16vh] bg-[#18191F] text-[#fff] font-medium"
+                      className="h-[9vh] w-[16vh] bg-crypticOrange text-[#fff] font-medium"
                     >
                       Register
                     </button>

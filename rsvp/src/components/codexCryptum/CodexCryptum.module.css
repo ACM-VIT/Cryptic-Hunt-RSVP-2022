@@ -13,7 +13,6 @@
 
 
 .image {
-    max-width: none !important;
     /* height: 90vh; */
     margin-top: -8vh;
     margin-right: auto;
@@ -25,7 +24,7 @@
         font-size: 20px;
     }
 
-    .registerHeading {
+    .codexHeading {
         margin: 0 auto;
     }
 
@@ -67,7 +66,7 @@
         width: auto;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 50%;
+        margin-top: 150%;
     }
 }
 
@@ -76,11 +75,33 @@
         width: inherit;
         margin-right: 1rem;
         margin-left: 1rem;
-        margin-top: 100%;
+        margin-top: 150%;
     }
 }
+
+@media (min-width:200px) and (max-width:400px) {
+    .inputBox {
+        width: inherit;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 270%;
+    }
+}
+
 @media all and (max-width:500px) {
     button {
         margin-top: 3rem;
+    }
+}
+
+@media (width:600px) {
+    .inputBox {
+        margin-top: 110%;
+    }
+}
+
+@media all and (min-width:1500px) {
+    .image {
+        width: 34.4vw !important;
     }
 }

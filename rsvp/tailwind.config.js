@@ -9,11 +9,13 @@ module.exports = {
     },
     screens: {
       xxsm: "200px",
-      xsm: "380px",
+      xsm: "360px",
+      sm:"500px",
       mod: "600px",
       md: "1200px",
       xmd: "1400px",
       lg: "1500px",
+      xlg: "1800px"
     },
   },
   plugins: [],
