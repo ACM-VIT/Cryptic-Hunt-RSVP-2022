@@ -1,11 +1,14 @@
 import React from "react";
 import "./footer.css";
 
-import Instagram from "../../images/Instagram.svg";
-import Medium from "../../images/Medium.svg";
-import Twitter from "../../images/Twitter.svg";
-import Youtube from "../../images/Youtube.svg";
-import Component from "../../images/Component.svg";
+import Component from "../../assets/Component.svg";
+import Instagram from "../../assets/Instagram.svg";
+import Medium from "../../assets/Medium.svg";
+import Twitter from "../../assets/Twitter.svg";
+import Youtube from "../../assets/Youtube.svg";
+import facebook from "../../assets/facebook.svg";
+import discord from "../../assets/discord.svg";
+import linkedin from "../../assets/linkedin.svg";
 
 const Footer = () => {
   return (
@@ -53,14 +56,6 @@ const Footer = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://twitter.com/ACM_VIT"
-          className="logo"
-        >
-          <img src={Twitter} alt="Twitter" />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
           href="https://instagram.com/acmvit"
           className="logo"
         >
@@ -69,13 +64,52 @@ const Footer = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
+          href="https://twitter.com/ACM_VIT"
+          className="logo"
+        >
+          <img src={Twitter} alt="Twitter" />
+        </a>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://discord.com/invite/2yxdXGQB4e"
+          className="logo"
+        >
+          <img src={discord} alt="Discord" />
+        </a>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://medium.com/acmvit"
           className="logo"
         >
           <img src={Medium} alt="Medium" />
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="" className="logo">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.youtube.com/channel/UCaV36jEoK5SI59ly0Mxa_ZA"
+          className="logo"
+        >
           <img src={Youtube} alt="Youtube" />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/company/acmvit/"
+          className="logo"
+        >
+          <img src={linkedin} alt="LinkedIn" />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.facebook.com/acmvitvellore/"
+          className="logo"
+        >
+          <img src={facebook} alt="Facebook" />
         </a>
       </div>
     </div>
