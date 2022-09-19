@@ -1,13 +1,13 @@
 import React from "react";
-import "../../Styles/faq.css";
+import "./faq.css";
 
 const Faq = (props) => {
   return (
-    <div className="contentbox">
+    <div className=" contentbox">
       <div className="eachQuestion">
         <div className="number">{props.id}</div>
         <div className="question">{props.title}</div>
-        <div className="answer">{props.content}</div>
+        <div className=" lg:text-xl answer">{props.content}</div>
       </div>
       <div className={props.id != 8 ? `line` : ``}></div>
     </div>
