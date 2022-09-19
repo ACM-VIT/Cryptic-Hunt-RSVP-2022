@@ -16,7 +16,7 @@ function App() {
       <CodexCryptum />
       <RegisterDiv />
       <FaqSection />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
