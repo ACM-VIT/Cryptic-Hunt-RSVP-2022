@@ -17,7 +17,7 @@ const RegisterDiv = () => {
 
   return (
     <>
-      <div className="mt-40">
+      <div className="mt-40" id="Register">
         <div
           // className={`${classes.orangeContainer} ${`bg-crypticOrange mr-10 w-[130vh] h-[200vh] md:w-[165vh] lg:w-[180vh] md:h-[61.84vh] xxsm:h-[300vh]`}`}
           className={`${
@@ -56,9 +56,9 @@ const RegisterDiv = () => {
                   in the field of cybersecurity and cryptography. The workshop
                   is a pre-graVITas ‘22 event.
                   <br />{" "}
-                  <b>
+                  <strong>
                     Date: 25th September 2022, Sunday Time: 2.00 P.M. to 6.00P.M
-                  </b>
+                  </strong>
                 </p>
               </div>
               <div className={`${classes.formDiv} ${`flex`}`}>

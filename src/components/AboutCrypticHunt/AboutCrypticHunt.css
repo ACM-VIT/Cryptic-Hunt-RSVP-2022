@@ -23,6 +23,12 @@
   color: var(--cryptic-orange);
 }
 
+.app__demo__div {
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
 .appDemo {
   height: 600px;
   margin-bottom: 2vh;
@@ -52,6 +58,10 @@
   display: flex;
 }
 
+.store__badge > * {
+  padding: 0px 12.5px;
+}
+
 .badge {
   height: 75px;
 }
@@ -78,7 +88,7 @@
   }
   .explore {
     font-size: 42px;
-    line-height: 63px;
+    line-height: 55px;
     margin: 5px 25px;
   }
 
@@ -88,5 +98,8 @@
 
   .badge {
     height: 50px;
+  }
+  .store__badge > * {
+    padding: 0px 7.5px;
   }
 }

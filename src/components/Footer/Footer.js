@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Styles/footer.css";
+import "./footer.css";
 
 import Instagram from "../../images/Instagram.svg";
 import Medium from "../../images/Medium.svg";
