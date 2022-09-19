@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import AboutCrypticHunt from "./components/AboutCrypticHunt/AboutCrypticHunt";
+
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <h1 className="text-4xl p-6 text-orange-600 underline">
-    Hello world!
-    </h1>
+    <div className="app">
+      <Navbar />
+      <AboutCrypticHunt />
+    </div>
   );
 }
 
