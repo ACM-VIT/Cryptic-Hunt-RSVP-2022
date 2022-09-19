@@ -20,13 +20,14 @@ const AboutCrypticHunt = () => {
           data-aos-duration="2000"
           data-aos-anchor-placement="top-bottom"
         >
-          Get Ready for experiencing the excitment and thrill of hunt,{" "}
+          Get ready to experience the excitment and thrill of the hunt
           <span
             data-aos="fade-up"
             data-aos-duration="2000"
             data-aos-anchor-placement="top-bottom"
           >
-            Go Cryptic
+            <br />
+            Expect the Unexpected!
           </span>
         </p>
       </div>
@@ -59,7 +60,7 @@ const AboutCrypticHunt = () => {
         data-aos-duration="2000"
         data-aos-anchor-placement="top-bottom"
       >
-        ACM-VIT's Hybrid Cryptic Hunt is an elaborate Treasure Hunt where our
+        ACM-VIT's Hybrid Cryptic Hunt is an elaborate treasure hunt where our
         participants will be given questions to solve using skills from the
         cryptography and cybersecurity domains. Through the Hunt, the
         participants will get to explore both the world of cybersec and that of
@@ -70,7 +71,9 @@ const AboutCrypticHunt = () => {
           data-aos-duration="2000"
           data-aos-anchor-placement="top-bottom"
         >
-          Date: 30th September to 1st October Time: 8:00 A.M. TO 4:00 P.M.
+          Date: 30th September to 1st October
+          <br />
+          Time: 8:00 A.M. TO 4:00 P.M.
         </span>
       </p>
     </section>
