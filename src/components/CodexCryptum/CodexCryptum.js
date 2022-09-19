@@ -17,7 +17,7 @@ const RegisterDiv = () => {
 
   return (
     <>
-      <div className="mt-40">
+      <div className="mt-40" id="Register">
         <div
           // className={`${classes.orangeContainer} ${`bg-crypticOrange mr-10 w-[130vh] h-[200vh] md:w-[165vh] lg:w-[180vh] md:h-[61.84vh] xxsm:h-[300vh]`}`}
           className={`${

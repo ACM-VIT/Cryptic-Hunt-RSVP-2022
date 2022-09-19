@@ -13,7 +13,7 @@ const AboutCrypticHunt = () => {
   }, []);
 
   return (
-    <section className="hero">
+    <section className="hero" id="About">
       <div className="heading">
         <p
           data-aos="fade-up"
@@ -42,7 +42,7 @@ const AboutCrypticHunt = () => {
           />
         </a>
       </div>
-      <div className="app__demo">
+      <div className="app__demo__div">
         <img src={appDemo} className="appDemo" alt="Cryptic Hunt App Demo" />
       </div>
       <p

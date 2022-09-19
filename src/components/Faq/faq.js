@@ -22,7 +22,7 @@ const Faq = (props) => {
         <div className="question">{props.title}</div>
         <div className=" lg:text-xl answer">{props.content}</div>
       </div>
-      <div className={props.id != 8 ? `line` : ``}></div>
+      <div className={props.id !== 8 ? `line` : ``}></div>
     </div>
   );
 };
