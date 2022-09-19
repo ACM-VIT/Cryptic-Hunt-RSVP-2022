@@ -6,8 +6,8 @@ import RegisterDiv from "./components/RegisterDiv/RegisterDiv";
 function App() {
   return (
     <>
-      {/* <RegisterDiv /> */}
       <CodexCryptum />
+      <RegisterDiv />
     </>
   );
 }
