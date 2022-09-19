@@ -22,7 +22,7 @@ const RegisterDiv = () => {
           // className={`${classes.orangeContainer} ${`bg-crypticOrange mr-10 w-[130vh] h-[200vh] md:w-[165vh] lg:w-[180vh] md:h-[61.84vh] xxsm:h-[300vh]`}`}
           className={`${
             classes.orangeContainer
-          } ${`bg-crypticOrange mx-8 h-[200vh] md:h-[61.84vh] xxsm:h-[250vh] xsm:h-[180vh] md:mx-20 sm:h-[150vh] mod:h-[150vh]`}`}
+          } ${`bg-crypticOrange mx-8 h-[200vh] md:h-[61.84vh] xxsm:h-[250vh] xsm:h-[160vh] md:mx-20 sm:h-[150vh] mod:h-[150vh]`}`}
         >
           <div className="flex flex-col-reverse md:flex-row lg:flex-row">
             <div className="flex flex-col">

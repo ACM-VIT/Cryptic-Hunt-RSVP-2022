@@ -57,7 +57,8 @@ const RegisterDiv = () => {
                   is a pre-graVITas ‘22 event.
                   <br />{" "}
                   <b>
-                    Date: 25th September 2022, Sunday Time: 2.00 P.M. to 6.00P.M
+                    Date: 25th September 2022, Sunday <br />
+                    <b>Time: 2.00 P.M. to 6.00P.M</b>
                   </b>
                 </p>
               </div>
