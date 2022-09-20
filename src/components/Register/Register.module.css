@@ -34,17 +34,14 @@
     margin-right: auto;
     margin-left: auto;
   }
+  .register-btn {
+    margin-left: auto;
+  }
 }
 
 @media all and (min-width: 1200px) {
   .registerPara {
     width: 67vh;
-  }
-}
-
-@media all and (min-width: 1500px) {
-  .image {
-    height: 90vh;
   }
 }
 
@@ -110,12 +107,6 @@
 @media all and (max-width: 500px) {
   button {
     margin-top: 3rem;
-  }
-}
-
-@media all and (min-width: 1500px) {
-  .image {
-    width: 34.4vw !important;
   }
 }
 

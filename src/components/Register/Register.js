@@ -48,7 +48,7 @@ const RegisterDiv = () => {
                     style={{ fontFamily: "Inter" }}
                     className={`${
                       classes.registerPara
-                    } ${`w-[100vh] mt-[2vh] ml-[5vw] font-normal text-center md:text-normal text-3xl text-black md:text-base md:text-left xxsm:p-3 md:p-0`}`}
+                    } ${`w-[100vh] mt-[2vh] mx-auto md:ml-[5vw] font-normal text-center md:text-normal text-3xl text-black md:text-base md:text-left xxsm:p-3 md:p-0`}`}
                   >
                     Once you have clicked on the button below and are at the
                     graVITas '22 events website, follow the given instructions
@@ -69,7 +69,7 @@ const RegisterDiv = () => {
                     <br />
                   </p>
                 </div>
-                <div className="ml-[5vw]">
+                <div className="mx-auto md:ml-[5vw]">
                   <a
                     href="https://events.vit.ac.in/events/gravitas2022/Dashboard/index"
                     target="_blank"
@@ -78,7 +78,7 @@ const RegisterDiv = () => {
                       data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="2000"
-                      className="h-[6vh] w-[18vw] mt-8 rounded-md bg-crypticOrange text-[#fff] font-medium"
+                      className="register-btn  h-[6vh] w-[46vw] mt-8 rounded-md bg-crypticOrange text-[#fff] font-medium md:w-[18vw]"
                     >
                       Register
                     </button>

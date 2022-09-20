@@ -39,48 +39,46 @@ const RegisterDiv = () => {
                   Cryptic Hunt App
                 </h1>
               </div>
-              <div className="flex flex-row">
-                <p
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-anchor-placement="top-bottom"
-                  style={{ fontFamily: "Inter" }}
-                  className={`${
-                    classes.registerPara
-                  } ${`w-[100vh] h-[24.13vh] mt-[10vh] ml-[5vw] font-normal text-center md:text-normal text-3xl text-[#fff] md:text-base md:text-left md:mt-[9vh] xxsm:p-3 md:p-0`}`}
-                >
-                  The Cryptic Hunt app is your one stop destination for all your
-                  Hunt related needs. Get on the trail with the leaderboard,
-                  questions and timeline just one click away! The app will go
-                  live soon, so RSVP to get more updates.
-                </p>
+              {/* <div className="flex flex-row"> */}
+              <p
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-anchor-placement="top-bottom"
+                style={{ fontFamily: "Inter" }}
+                className={`${
+                  classes.registerPara
+                } ${`mt-[10vh] mb-12 mx-auto md:ml-[5vw] font-normal text-center md:text-xl text-3xl text-[#fff] md:text-base md:text-left md:mt-[9vh] xxsm:p-3 md:p-0`}`}
+              >
+                The Cryptic Hunt app is your one stop destination for all your
+                Hunt related needs. Get on the trail with the leaderboard,
+                questions and timeline just one click away! The app will go live
+                soon, so RSVP to get more updates.
+              </p>
+              {/* </div> */}
+              {/* <div className={`${classes.formDiv} ${``}`}> */}
+              <div className={`${`text-center md:mt-[-16vh]`}`}>
+                <form onSubmit={handleSubmit}>
+                  <input
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                    data-ao-anchor-placement="top-bottom"
+                    type="text"
+                    placeholder="Your email address here"
+                    className={`${
+                      classes.inputBox
+                    } ${`relative w-[40vh] h-[9vh] rounded-l-md md:h-[7.84vh]`}`}
+                  ></input>
+                  <button
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2000"
+                    className="h-[9vh] w-[16vh] rounded-r-md md:h-[7.84vh] bg-[#18191F] text-[#fff] font-medium"
+                  >
+                    RSVP
+                  </button>
+                </form>
               </div>
-              <div className={`${classes.formDiv} ${`flex`}`}>
-                <div
-                  className={`${`text-center mt-32 md:m-0 xxsm:mt-[60vh] xxsm:ml-3 md:mt-[-35vh]`}`}
-                >
-                  <form onSubmit={handleSubmit}>
-                    <input
-                      data-aos="fade-up"
-                      data-aos-duration="2000"
-                      data-aos-anchor-placement="top-bottom"
-                      type="text"
-                      placeholder="Your email address here"
-                      className={`${
-                        classes.inputBox
-                      } ${`relative w-[40vh] h-[9vh] rounded-l-md md:h-[7.84vh] ml-[9vh] mt-[25vh] md:mt-[15vh]`}`}
-                    ></input>
-                    <button
-                      data-aos="fade-up"
-                      data-aos-anchor-placement="top-bottom"
-                      data-aos-duration="2000"
-                      className="h-[9vh] w-[16vh] rounded-r-md	md:h-[7.84vh] bg-[#18191F] text-[#fff] font-medium"
-                    >
-                      RSVP
-                    </button>
-                  </form>
-                </div>
-              </div>
+              {/* </div> */}
             </div>
             {/* <div className={`${`relative`}`}> */}
             <img className={`${classes.image}`} alt="acm" src={image}></img>
