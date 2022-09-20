@@ -8,6 +8,10 @@
   --cryptic-cream: #fff4ea;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }

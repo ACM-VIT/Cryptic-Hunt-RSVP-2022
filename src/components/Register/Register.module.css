@@ -13,7 +13,6 @@
 
 .image {
   /* height: 90vh; */
-  margin-top: -8vh;
   margin-right: auto;
   margin-left: auto;
 }
@@ -40,7 +39,6 @@
 @media all and (min-width: 1200px) {
   .registerPara {
     width: 67vh;
-    height: 40vh;
   }
 }
 
@@ -91,28 +89,28 @@
   }
 }
 
-@media (min-width:200px) and (max-width:370px) {
-    .inputBox {
-        width: inherit;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        margin-top: 270%;
-    }
+@media (min-width: 200px) and (max-width: 370px) {
+  .inputBox {
+    width: inherit;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 270%;
+  }
 }
 
-@media (min-width:370px) and (max-width:450px) {
-    .inputBox {
-        width: inherit;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        margin-top: 200%;
-    }
+@media (min-width: 370px) and (max-width: 450px) {
+  .inputBox {
+    width: inherit;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 200%;
+  }
 }
 
-@media all and (max-width:500px) {
-    button {
-        margin-top: 3rem;
-    }
+@media all and (max-width: 500px) {
+  button {
+    margin-top: 3rem;
+  }
 }
 
 @media all and (min-width: 1500px) {
@@ -121,15 +119,14 @@
   }
 }
 
-@media all and (min-width:1500px) {
-    .image {
-        width: 34.4vw !important;
-    }
+@media all and (min-width: 1500px) {
+  .image {
+    width: 34.4vw !important;
+  }
 }
 
-
-@media (width:393px) {
-    .inputBox {
-        margin-top: 180%;
-    }
+@media (width: 393px) {
+  .inputBox {
+    margin-top: 180%;
+  }
 }
