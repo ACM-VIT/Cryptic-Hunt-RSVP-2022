@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--cryptic-cream);
+  padding-top: 6%;
 }
 
 .heading {
