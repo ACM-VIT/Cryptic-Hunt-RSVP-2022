@@ -23,7 +23,7 @@ const Footer = () => {
             <img src={Component} alt="ACM-Logo" />
           </a>
         </div>
-        <div className="footer1">
+        {/* <div className="footer1">
           <div>
             <p>Download Now</p>
           </div>
@@ -50,14 +50,14 @@ const Footer = () => {
           <div className="footer2-inner">
             <p>Privacy Policy</p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="social">
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://instagram.com/acmvit"
-          className="logo"
+          className="logos"
         >
           <img src={Instagram} alt="Instagram" />
         </a>
@@ -65,7 +65,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://twitter.com/ACM_VIT"
-          className="logo"
+          className="logos"
         >
           <img src={Twitter} alt="Twitter" />
         </a>
@@ -74,7 +74,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://discord.com/invite/2yxdXGQB4e"
-          className="logo"
+          className="logos"
         >
           <img src={discord} alt="Discord" />
         </a>
@@ -83,7 +83,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://medium.com/acmvit"
-          className="logo"
+          className="logos"
         >
           <img src={Medium} alt="Medium" />
         </a>
@@ -91,7 +91,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.youtube.com/channel/UCaV36jEoK5SI59ly0Mxa_ZA"
-          className="logo"
+          className="logos"
         >
           <img src={Youtube} alt="Youtube" />
         </a>
@@ -99,7 +99,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/company/acmvit/"
-          className="logo"
+          className="logos"
         >
           <img src={linkedin} alt="LinkedIn" />
         </a>
@@ -107,7 +107,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.facebook.com/acmvitvellore/"
-          className="logo"
+          className="logos"
         >
           <img src={facebook} alt="Facebook" />
         </a>
