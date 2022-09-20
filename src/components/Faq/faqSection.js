@@ -4,7 +4,7 @@ import "./faqSection.css";
 import data from "./Data";
 
 const FaqSection = () => (
-  <article id="faqs" className="faqcontainer">
+  <article id="Faq" className="faqcontainer">
     <div className="tabscontainer">
       {data.map((ques) => (
         <Faq

@@ -11,21 +11,18 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
-      <div className="logo">
-        <img src={crypticHuntLogo} alt="Logo" className="cryptic-hunt-logo" />
-        <h1 className="heading-logo">Cryptic Hunt</h1>
-      </div>
+      <a href="#">
+        <div className="logo">
+          <img src={crypticHuntLogo} alt="Logo" className="cryptic-hunt-logo" />
+          <h1 className="heading-logo">Cryptic Hunt</h1>
+        </div>
+      </a>
       <div className="burger__menu" ref={burgerRef} onClick={handleClick}>
         <div className="burger__line"></div>
         <div className="burger__line"></div>
         <div className="burger__line"></div>
       </div>
       <ul className="nav__menu" ref={menuRef}>
-        <li>
-          <a href="#Home" className="nav__links">
-            Home
-          </a>
-        </li>
         <li>
           <a href="#About" className="nav__links">
             About
@@ -34,6 +31,11 @@ const Navbar = () => {
         <li>
           <a href="#Register" className="nav__links">
             Register
+          </a>
+        </li>
+        <li>
+          <a href="#Faq" className="nav__links">
+            FAQ
           </a>
         </li>
       </ul>

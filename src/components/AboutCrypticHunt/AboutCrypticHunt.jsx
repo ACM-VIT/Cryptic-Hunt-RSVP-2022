@@ -13,7 +13,7 @@ const AboutCrypticHunt = () => {
   }, []);
 
   return (
-    <section className="hero" id="About">
+    <section className="hero">
       <div className="heading">
         <p
           data-aos="fade-up"
@@ -47,7 +47,8 @@ const AboutCrypticHunt = () => {
         <img src={appDemo} className="appDemo" alt="Cryptic Hunt App Demo" />
       </div>
       <p
-        className="explore"
+        id="About"
+        className="pt-40 -mt-40 explore"
         data-aos="fade-up"
         data-aos-duration="2000"
         data-aos-anchor-placement="top-bottom"
@@ -71,9 +72,9 @@ const AboutCrypticHunt = () => {
           data-aos-duration="2000"
           data-aos-anchor-placement="top-bottom"
         >
-          Date: 30th September to 1st October
+          <b>Date:</b> 30th September to 1st October
           <br />
-          Time: 8:00 A.M. TO 4:00 P.M.
+          <b>Time:</b> 8:00 A.M. TO 4:00 P.M.
         </span>
       </p>
     </section>

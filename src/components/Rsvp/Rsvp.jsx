@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import classes from "./RegisterDiv.module.css";
+import classes from "./Rsvp.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import image from "../../assets/Phone Mockup.svg";
@@ -68,15 +68,15 @@ const RegisterDiv = () => {
                       placeholder="Your email address here"
                       className={`${
                         classes.inputBox
-                      } ${`relative w-[40vh] h-[10vh] md:h-[7.84vh] ml-[9vh] mt-[25vh] md:mt-[15vh]`}`}
+                      } ${`relative w-[40vh] h-[9vh] rounded-l-md md:h-[7.84vh] ml-[9vh] mt-[25vh] md:mt-[15vh]`}`}
                     ></input>
                     <button
                       data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="2000"
-                      className="h-[9vh] w-[16vh] bg-[#18191F] text-[#fff] font-medium"
+                      className="h-[9vh] w-[16vh] rounded-r-md	md:h-[7.84vh] bg-[#18191F] text-[#fff] font-medium"
                     >
-                      Register
+                      RSVP
                     </button>
                   </form>
                 </div>
