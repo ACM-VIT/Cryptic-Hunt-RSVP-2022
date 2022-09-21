@@ -27,7 +27,7 @@ export default [
     id: "5",
     question: "Is the event going to have a participating fee?",
     answer:
-      "The pre-event does not have a fee, but the main one afterwards is going to have a ₹250 fee.",
+      "The Hybrid Cryptic Hunt has a participation fee of ₹250 per person for the entire two-day event.",
   },
   {
     id: "6",

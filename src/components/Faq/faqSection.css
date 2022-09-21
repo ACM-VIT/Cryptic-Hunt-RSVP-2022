@@ -17,3 +17,9 @@
   justify-content: center;
   align-items: center;
 }
+
+@media all and (max-width: 560px) {
+  .faqcontainer {
+    margin-top: 6rem;
+  }
+}

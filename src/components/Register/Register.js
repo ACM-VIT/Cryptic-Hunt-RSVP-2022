@@ -6,10 +6,6 @@ import "aos/dist/aos.css";
 import image from "../../assets/codexCryptum.svg";
 
 const RegisterDiv = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -23,7 +19,7 @@ const RegisterDiv = () => {
             // className={`${classes.orangeContainer} ${`bg-crypticOrange mr-10 w-[130vh] h-[200vh] md:w-[165vh] lg:w-[180vh] md:h-[61.84vh] xxsm:h-[300vh]`}`}
             className={`${
               classes.orangeContainer
-            } ${` mx-8 h-[200vh] md:h-[61.84vh] xxsm:h-[250vh] xsm:h-[180vh] md:mx-20`}`}
+            } ${` mx-8 h-[200vh] md:h-[61.84vh] xxsm:h-[250vh] xsm:h-[160vh] md:mx-20`}`}
           >
             <div className="flex flex-col-reverse md:flex-row lg:flex-row">
               <div className="flex flex-col">
@@ -53,19 +49,26 @@ const RegisterDiv = () => {
                     Once you have clicked on the button below and are at the
                     graVITas '22 events website, follow the given instructions
                     to register for The Hybrid Cryptic Hunt! <br />
+                    <br />
                     <b>1.</b> Click on the "Register" button if this is your
                     first time using the page.
                     <br />
                     <b>2.</b> Fill in all the required details to register your
                     account.
                     <br />
-                    3. Once you've verified your email id, you can sign in using
-                    the email id and your password. <br />
-                    4. In the list of events, scroll to the 4th event, which is
-                    the Hybrid Cryptic Hunt, and click add to cart. <br />
-                    5. Go to your cart and select the number of participants
-                    that your team would have. <br />
-                    6. Pay the required amount.
+                    <b>3.</b> Once you've verified your email id, you can sign
+                    in using the email id and your password. <br />
+                    <b>4.</b> In the list of events, scroll to the 4th event,
+                    which is the Hybrid Cryptic Hunt, and click add to cart.{" "}
+                    <br />
+                    <b>5.</b> Go to your cart and select the number of
+                    participants that your team would have. <br />
+                    <b>6.</b> Pay the required amount.
+                    <br />
+                    <br />
+                    Once you complete these steps you would have successfully
+                    registered for the Hybrid Cryptic Hunt. See you at graVITas
+                    '22!
                     <br />
                   </p>
                 </div>
@@ -73,6 +76,7 @@ const RegisterDiv = () => {
                   <a
                     href="https://events.vit.ac.in/events/gravitas2022/Dashboard/index"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <button
                       data-aos="fade-up"

@@ -24,17 +24,17 @@ const Navbar = () => {
       </div>
       <ul className="nav__menu" ref={menuRef}>
         <li>
-          <a href="#About" className="nav__links">
+          <a href="#About" className="nav__links" onClick={handleClick}>
             About
           </a>
         </li>
         <li>
-          <a href="#Register" className="nav__links">
+          <a href="#Register" className="nav__links" onClick={handleClick}>
             Register
           </a>
         </li>
         <li>
-          <a href="#Faq" className="nav__links">
+          <a href="#Faq" className="nav__links" onClick={handleClick}>
             FAQ
           </a>
         </li>

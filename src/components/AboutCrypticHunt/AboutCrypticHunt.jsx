@@ -20,14 +20,14 @@ const AboutCrypticHunt = () => {
           data-aos-duration="2000"
           data-aos-anchor-placement="top-bottom"
         >
-          Get ready to experience the excitment and thrill of the hunt
+          Get ready to experience the excitment and thrill of the hunt!
           <span
             data-aos="fade-up"
             data-aos-duration="2000"
             data-aos-anchor-placement="top-bottom"
           >
             <br />
-            Expect the Unexpected!
+            Expect the Unexpected
           </span>
         </p>
       </div>
@@ -38,7 +38,7 @@ const AboutCrypticHunt = () => {
         {/* </a> */}
         {/* <a href="#play-store"> */}
         <img src={playStore} className="badge" alt="App and Play Store Demo" />
-        {/* </a> */}
+        {/* </a>w */}
       </div>
       <div className="app__demo__div">
         <img src={appDemo} className="appDemo" alt="Cryptic Hunt App Demo" />
@@ -71,7 +71,7 @@ const AboutCrypticHunt = () => {
         >
           <b>Date:</b> 30th September to 1st October
           <br />
-          <b>Time:</b> 8:00 A.M. TO 4:00 P.M.
+          <b>Time:</b> 8:00 A.M. TO 5:00 P.M.
         </span>
       </p>
     </section>
