@@ -31,17 +31,14 @@ const AboutCrypticHunt = () => {
           </span>
         </p>
       </div>
+      <div className="text-3xl font-bold	pb-4 ">Coming Soon on</div>
       <div className="store__badge">
-        <a href="#app-store">
-          <img src={appStore} className="badge" alt="App and Play Store Demo" />
-        </a>
-        <a href="#play-store">
-          <img
-            src={playStore}
-            className="badge"
-            alt="App and Play Store Demo"
-          />
-        </a>
+        {/* <a href="#app-store"> */}
+        <img src={appStore} className="badge" alt="App and Play Store Demo" />
+        {/* </a> */}
+        {/* <a href="#play-store"> */}
+        <img src={playStore} className="badge" alt="App and Play Store Demo" />
+        {/* </a> */}
       </div>
       <div className="app__demo__div">
         <img src={appDemo} className="appDemo" alt="Cryptic Hunt App Demo" />

@@ -71,7 +71,7 @@
   .navbar {
     justify-content: space-around;
     height: 7.5vh;
-    position: relative;
+    position: fixed;
   }
 
   .navbar > * {
