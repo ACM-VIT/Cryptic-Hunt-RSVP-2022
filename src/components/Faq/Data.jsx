@@ -9,7 +9,7 @@ export default [
     id: "2",
     question: "How many members can we have per team?",
     answer:
-      "You can have four members as the maximum in each team, but it's not necessary to have a team, as you can also compete individually.",
+      "You can have up to six members in a team, but it's not necessary to have a team, as you can also compete individually.",
   },
   {
     id: "3",
