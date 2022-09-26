@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import crypticHuntLogo from "../../assets/cryptic-logo.svg";
+import crypticHuntLogo from "../../assets/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
