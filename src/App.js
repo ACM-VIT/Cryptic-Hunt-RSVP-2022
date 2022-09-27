@@ -5,13 +5,25 @@ import CodexCryptum from "./components/Register/Register";
 import RegisterDiv from "./components/Rsvp/Rsvp";
 import FaqSection from "./components/Faq/faqSection";
 import Footer from "./components/Footer/Footer";
-import logo from "./logo.svg";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
+      <ToastContainer
+        theme="colored"
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <AboutCrypticHunt />
       <CodexCryptum />
       <RegisterDiv />
