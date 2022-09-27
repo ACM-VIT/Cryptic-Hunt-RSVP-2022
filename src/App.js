@@ -8,6 +8,10 @@ import Footer from "./components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
 
+// require("dotenv").config();
+console.log(process.env.REACT_APP_URL);
+console.log(process.env.REACT_APP_reCaptchaKey);
+
 function App() {
   return (
     <div className="app">

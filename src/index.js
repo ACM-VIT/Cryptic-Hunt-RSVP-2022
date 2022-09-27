@@ -8,12 +8,11 @@ import {
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3";
 import { BrowserRouter } from "react-router-dom";
-import key from "./key/key";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <GoogleReCaptchaProvider reCaptchaKey={key[0].reCaptchaKey}>
+    <GoogleReCaptchaProvider reCaptchaKey={process.env.REACT_APP_reCaptchaKey}>
       <GoogleReCaptcha
         onVerify={(token) => {
           window.sessionStorage.setItem("token", token);

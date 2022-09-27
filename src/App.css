@@ -42,9 +42,9 @@ html {
   color: #61dafb;
 }
 
-.grecaptcha-badge {
+/* .grecaptcha-badge {
   visibility: hidden;
-}
+} */
 
 @keyframes App-logo-spin {
   from {

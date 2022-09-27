@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import classes from "./Rsvp.module.css";
 import image from "../../assets/Phone Mockup.svg";
-import key from "../../key/key";
+// import key from "../../key/key";
 
 const RegisterDiv = () => {
   useEffect(() => {
@@ -44,7 +44,7 @@ const RegisterDiv = () => {
     }
     axios({
       method: "post",
-      url: key[0].url,
+      url: process.env.REACT_APP_URL,
       data: qs.stringify({
         email,
         captcha: window.sessionStorage.getItem("token"),
