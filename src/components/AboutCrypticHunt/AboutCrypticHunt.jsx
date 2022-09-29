@@ -1,16 +1,24 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { auth } from "../../services/firebase";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import appDemo from "../../assets/cryptichunt-demo.svg";
 import appStore from "../../assets/App Store Badge.svg";
 import playStore from "../../assets/Google Play Badge.svg";
+
 import "./AboutCrypticHunt.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const AboutCrypticHunt = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const navigate = useNavigate();
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
 
   return (
     <section className="hero">
@@ -31,17 +39,31 @@ const AboutCrypticHunt = () => {
           </span>
         </p>
       </div>
-      <div className="text-3xl font-bold	pb-4 ">Coming Soon on</div>
-      <div className="store__badge">
-        {/* <a href="#app-store"> */}
-        <img src={appStore} className="badge" alt="App and Play Store Demo" />
-        {/* </a> */}
-        {/* <a href="#play-store"> */}
-        <img src={playStore} className="badge" alt="App and Play Store Demo" />
-        {/* </a>w */}
-      </div>
+      <button
+        className="checkin-btn"
+        onClick={async () => {
+          try {
+            console.log(`first`);
+            await signInWithGoogle();
+            navigate(`/welcome`);
+          } catch (error) {
+            console.log(error);
+          }
+        }}
+      >
+        Check In Now!
+      </button>
       <div className="app__demo__div">
         <img src={appDemo} className="appDemo" alt="Cryptic Hunt App Demo" />
+      </div>
+      <div className="text-3xl font-bold	pb-4 ">Coming Soon on</div>
+      <div className="store__badge">
+        {/* <a href="https://testflight.apple.com/join/VghTlqNj"> */}
+        <img src={appStore} className="badge" alt="App and Play Store Demo" />
+        {/* </a> */}
+        {/* <a href="https://play.google.com/store/apps/details?id=com.acmvit.cryptic_hunt"> */}
+        <img src={playStore} className="badge" alt="App and Play Store Demo" />
+        {/* </a> */}
       </div>
       <p
         id="About"

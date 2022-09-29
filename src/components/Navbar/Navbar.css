@@ -3,14 +3,10 @@
   width: 100%;
   z-index: 100;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 7vh;
   background-color: var(--cryptic-orange);
-}
-
-.navbar > * {
-  margin: 0px 160px;
 }
 
 .nav__menu {
