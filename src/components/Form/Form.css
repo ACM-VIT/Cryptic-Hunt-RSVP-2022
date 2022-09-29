@@ -1,0 +1,60 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.main-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.sub-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.checkin-form {
+  font-size: 0.8rem;
+  width: 25%;
+  margin: 2% auto;
+}
+
+input {
+  width: 100%;
+  margin: 2% auto 4% auto;
+  padding: 2%;
+  border: 1px solid #ff7a01;
+  border-radius: 4px;
+}
+
+#cb {
+  width: auto;
+  border: 4px solid #ff7a01;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+button {
+  margin: 1% auto;
+  width: 30%;
+  font-size: 1.2rem;
+  background-color: #ff7a01;
+  border-radius: 5px;
+  color: #fff;
+  border: 0px;
+}
