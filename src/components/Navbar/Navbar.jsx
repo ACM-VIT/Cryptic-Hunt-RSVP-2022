@@ -4,8 +4,10 @@ import { signOut } from "firebase/auth";
 import "./Navbar.css";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../services/firebase";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const menuRef = useRef();
   const burgerRef = useRef();
   const handleClick = (event) => {
@@ -44,20 +46,38 @@ const Navbar = () => {
                 FAQ
               </a>
             </li>
+            {user ? (
+              <li>
+                <a
+                  onClick={async () => {
+                    await signOut(auth);
+                    navigate(`/`);
+                    console.log("signed out");
+                  }}
+                  className="nav__links"
+                >
+                  {`Logout`}
+                </a>
+              </li>
+            ) : null}
           </ul>
         </>
-      ) : null}
-      {user ? (
-        <button
-          onClick={async () => {
-            await signOut(auth);
-            console.log("signed out");
-          }}
-          className="logout"
-        >
-          {`Logout`}
-        </button>
-      ) : null}
+      ) : (
+        <>
+          {user ? (
+            <button
+              onClick={async () => {
+                await signOut(auth);
+                navigate(`/`);
+                console.log("signed out");
+              }}
+              className="logout"
+            >
+              {`Logout`}
+            </button>
+          ) : null}
+        </>
+      )}
     </nav>
   );
 };

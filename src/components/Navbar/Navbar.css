@@ -63,6 +63,13 @@
   margin: 4px;
 }
 
+.logout {
+  position: absolute;
+  right: 2%;
+  width: auto;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     justify-content: space-around;
