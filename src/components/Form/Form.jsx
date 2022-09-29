@@ -8,7 +8,7 @@ const getToken = async () => {
   return await auth.currentUser.getIdToken();
 };
 
-const Form = ({ count = 4 }) => {
+const Form = ({ count }) => {
   const [loading, setLoading] = useState(true);
   // const [token, setToken] = useState()
   const [users, setUsers] = useState(
@@ -27,25 +27,6 @@ const Form = ({ count = 4 }) => {
   );
 
   const [currentView, setCurrentView] = useState(0);
-  useEffect(() => {
-    const asyncFn = async () => {
-      const BACKEND_URL = `https://crypticstaging.acmvit.in`;
-      const token = await getToken();
-      const res = await fetch(`${BACKEND_URL}/verify/getDetails`, {
-        headers: {
-          method: "GET",
-          authorization: `Bearer ${token}`,
-        },
-        mode: "cors",
-        credentials: "include",
-      });
-      if (res.ok) {
-        const json = await res.json();
-        console.log(json);
-      }
-    };
-    asyncFn();
-  }, []);
 
   const handleNext = (e) => {
     e.preventDefault();
@@ -86,6 +67,7 @@ const Form = ({ count = 4 }) => {
     ) {
       toast.error("Invalid registration number!");
     } else if (currentView + 1 == users.length) {
+      // asyncFn();
       notifySubmit();
     } else {
       notifySuccess();
@@ -115,14 +97,47 @@ const Form = ({ count = 4 }) => {
     setUsers(currUsers);
   };
 
+  const asyncFn = async () => {
+    const BACKEND_URL = `https://crypticstaging.acmvit.in`;
+    const token = await getToken();
+    const res = await fetch(`${BACKEND_URL}/verify/whitelist`, {
+      headers: {
+        method: "POST",
+        authorization: `Bearer ${token}`,
+      },
+      mode: "cors",
+      credentials: "include",
+      body: JSON.stringify({
+        data: users.map((v) => ({
+          email: v.email,
+          regno: v.reg ?? null,
+          name: v.name,
+          mobile: v.number,
+          college: v.isVit == true ? "VIT Vellore" : v.college,
+        })),
+      }),
+    });
+    setLoading(false);
+    if (res.ok) {
+      const json = await res.json();
+      console.log(json);
+      // setData(json);
+    }
+  };
+
   return (
     <div className="main-container">
+      {/* pre, code, JSON.stringify */}
+      <pre>
+        <code>{JSON.stringify(users, null, 2)}</code>
+      </pre>
       <div className="main-heading">Check In!</div>
       {currentView === 0 ? (
         <div className="sub-heading">Your Details</div>
       ) : (
         <div className="sub-heading">
-          You have paid for <span className="text-[#FF7A01]">${}</span> people
+          You have paid for <span className="text-[#FF7A01]">{count}</span>{" "}
+          people
         </div>
       )}
       {currentView === 0 ? (

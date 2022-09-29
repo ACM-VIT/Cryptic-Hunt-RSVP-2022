@@ -9,11 +9,11 @@ import Rsvp from "./components/Rsvp/Rsvp";
 import FaqSection from "./components/Faq/faqSection";
 import Footer from "./components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
-import Form from "./components/Form/Form";
 import Welcome from "./components/Welcome/Welcome";
 import { useAuthState } from "react-firebase-hooks/auth";
 import "./App.css";
 import { auth } from "./services/firebase";
+import FormWrapper from "./components/Form/FormWrapper";
 
 function App() {
   const [user, loading, error] = useAuthState(auth);
@@ -50,7 +50,7 @@ function App() {
         {user ? (
           <>
             <Route path="/welcome" element={<Welcome />} />
-            <Route path="/form" element={<Form />} />
+            <Route path="/form" element={<FormWrapper />} />
           </>
         ) : null}{" "}
       </Routes>
