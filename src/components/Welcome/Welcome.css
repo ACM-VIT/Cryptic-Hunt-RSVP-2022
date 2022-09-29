@@ -1,0 +1,42 @@
+.welcome-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  margin: auto 20vw;
+}
+
+.welcome-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.welcome-sub-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.welcome-content {
+  font-family: "Poppins";
+  font-style: normal;
+  text-align: justify;
+}
+
+.get-started-btn {
+  margin: 5% auto 5% auto;
+  width: auto;
+  padding: 0.5% 4%;
+  font-size: 1.2rem;
+  background-color: #ff7a01;
+  border-radius: 5px;
+  color: #fff;
+  border: 0px;
+}
