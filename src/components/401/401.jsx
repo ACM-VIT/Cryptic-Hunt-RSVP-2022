@@ -18,7 +18,7 @@ const NotAuth401 = () => (
         <div className="2xl:text-2xl 3xl:text-3xl text-xl mt-2 text-white font-400 pt-4">
           You have not paid for this event using this email.
         </div>
-        <a href="https://rcpc.acmvit.in">
+        <a href="/">
           <div className="mt-12 grad-bg text-white font-400 py-2 px-4 w-28 2xl:w-32 3xl:w-36 cursor-pointer rounded-xl">
             <span className="text-normal 2xl:text-md 3xl:text-lg">Go Back</span>
           </div>
