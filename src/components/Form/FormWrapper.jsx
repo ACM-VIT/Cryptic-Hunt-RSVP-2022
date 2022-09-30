@@ -15,8 +15,9 @@ const FormWrapper = () => {
 
   useEffect(() => {
     const asyncFn = async () => {
-      const BACKEND_URL = `https://crypticstaging.acmvit.in`;
+      const BACKEND_URL = `https://crypticbackend.acmvit.in`;
       const token = await getToken();
+
       const res = await fetch(`${BACKEND_URL}/verify/getDetails`, {
         headers: {
           method: "GET",
@@ -28,17 +29,18 @@ const FormWrapper = () => {
       setLoading(false);
       if (res.ok) {
         const json = await res.json();
-        console.log(json);
         setData(json);
+      } else {
+        window.location.href = "/401";
       }
     };
     asyncFn();
   }, []);
 
   return (
-    <div className="main-container">
+    <div>
       {loading ? (
-        <div className="loader">Loading...</div>
+        <div className="main-container">Loading...</div>
       ) : data === null ? (
         <>{`Error`}</>
       ) : (
