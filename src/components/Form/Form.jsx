@@ -173,7 +173,11 @@ const Form = ({ count }) => {
           onChange={onChange}
         />
         <br />
-        <label>Email used for registration: </label>
+        <label>
+          {currentView === 0
+            ? "Email used for registration:"
+            : "Enter particpant's Email"}
+        </label>
         <br />
         <input
           type="email"
