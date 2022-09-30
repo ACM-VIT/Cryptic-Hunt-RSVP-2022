@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
 import { auth } from "../../services/firebase";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
+
 import "./Form.css";
 
 const getToken = async () => {
@@ -9,6 +11,8 @@ const getToken = async () => {
 };
 
 const Form = ({ count }) => {
+  const navigate = useNavigate();
+
   const [loading, setLoading] = useState(true);
   // const [token, setToken] = useState()
   const [users, setUsers] = useState(
@@ -67,7 +71,7 @@ const Form = ({ count }) => {
     ) {
       toast.error("Invalid registration number!");
     } else if (currentView + 1 == users.length) {
-      // asyncFn();
+      asyncFn();
       notifySubmit();
     } else {
       notifySuccess();
@@ -85,7 +89,7 @@ const Form = ({ count }) => {
   };
 
   const notifySuccess = () => toast.success("Details saved successfully!");
-  const notifySubmit = () => toast.success("Form submitted successfully!");
+  const notifySubmit = () => toast("Your form is being submitted...");
 
   const onChange = (e) => {
     const currUsers = [...users.map((v) => ({ ...v }))];
@@ -98,46 +102,55 @@ const Form = ({ count }) => {
   };
 
   const asyncFn = async () => {
-    const BACKEND_URL = `https://crypticstaging.acmvit.in`;
+    const BACKEND_URL = `https://crypticbackend.acmvit.in`;
     const token = await getToken();
+    const body = JSON.stringify({
+      data: users.map((v) => ({
+        email: v.email,
+        regno: v.reg ?? null,
+        name: v.name,
+        mobile: v.number,
+        college: v.isVit == true ? "VIT Vellore" : v.college,
+        appleId: v.isUser == true ? v.id : null,
+      })),
+    });
     const res = await fetch(`${BACKEND_URL}/verify/whitelist`, {
+      method: "POST",
       headers: {
-        method: "POST",
+        "Content-Type": "application/json",
         authorization: `Bearer ${token}`,
       },
       mode: "cors",
       credentials: "include",
-      body: JSON.stringify({
-        data: users.map((v) => ({
-          email: v.email,
-          regno: v.reg ?? null,
-          name: v.name,
-          mobile: v.number,
-          college: v.isVit == true ? "VIT Vellore" : v.college,
-        })),
-      }),
-    });
+      body: body,
+    })
+      .then((response) => {
+        if (response.status == 403) {
+          toast.error("Form already submitted!");
+        } else if (response.status == 200) {
+          toast.success("Form submitted successfully!");
+          navigate(`/`);
+        }
+        response.json();
+      })
+      .catch((err) => {
+        toast.error(err.message);
+      });
     setLoading(false);
-    if (res.ok) {
-      const json = await res.json();
-      console.log(json);
-      // setData(json);
-    }
   };
 
   return (
     <div className="main-container">
-      {/* pre, code, JSON.stringify */}
-      <pre>
+      {/* <pre>
         <code>{JSON.stringify(users, null, 2)}</code>
-      </pre>
+      </pre> */}
       <div className="main-heading">Check In!</div>
       {currentView === 0 ? (
         <div className="sub-heading">Your Details</div>
       ) : (
         <div className="sub-heading">
-          You have paid for <span className="text-[#FF7A01]">{count}</span>{" "}
-          people
+          You have paid for <span className="text-[#FF7A01]">{count - 1}</span>{" "}
+          more people
         </div>
       )}
       {currentView === 0 ? (
@@ -155,6 +168,7 @@ const Form = ({ count }) => {
         <input
           type="text"
           name="name"
+          placeholder="Full Name"
           value={users[currentView].name}
           onChange={onChange}
         />
@@ -164,6 +178,7 @@ const Form = ({ count }) => {
         <input
           type="email"
           name="email"
+          placeholder="Email ID"
           value={users[currentView].email}
           onChange={onChange}
         />
@@ -173,6 +188,7 @@ const Form = ({ count }) => {
         <input
           type="tel"
           name="number"
+          placeholder="+XX XXXXXXXXXX"
           value={users[currentView].number}
           onChange={onChange}
         />
@@ -193,6 +209,7 @@ const Form = ({ count }) => {
             <input
               type="text"
               pattern="[0-2]{2}[A-Z]{3}[0-9]{4}"
+              placeholder="XXYYYXXXX"
               name="reg"
               value={users[currentView].reg}
               onChange={onChange}
@@ -206,6 +223,7 @@ const Form = ({ count }) => {
             <input
               type="text"
               name="college"
+              placeholder="College Name"
               value={users[currentView].college}
               onChange={onChange}
             />
@@ -227,6 +245,7 @@ const Form = ({ count }) => {
             <input
               type="text"
               name="id"
+              placeholder="Apple ID"
               value={users[currentView].id}
               onChange={onChange}
             />
