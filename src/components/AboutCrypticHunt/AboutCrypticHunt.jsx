@@ -4,6 +4,8 @@ import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { auth } from "../../services/firebase";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import appDemo from "../../assets/cryptichunt-demo.svg";
 import appStore from "../../assets/App Store Badge.svg";
@@ -43,11 +45,10 @@ const AboutCrypticHunt = () => {
         className="checkin-btn"
         onClick={async () => {
           try {
-            console.log(`first`);
             await signInWithGoogle();
             navigate(`/welcome`);
           } catch (error) {
-            console.log(error);
+            toast.error(error.message);
           }
         }}
       >

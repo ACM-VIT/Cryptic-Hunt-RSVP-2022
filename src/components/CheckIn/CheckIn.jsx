@@ -6,6 +6,8 @@ import "aos/dist/aos.css";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { auth } from "../../services/firebase";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import image from "../../assets/codexCryptum.svg";
 
@@ -74,7 +76,7 @@ const RegisterDiv = () => {
                         await signInWithGoogle();
                         navigate(`/welcome`);
                       } catch (error) {
-                        console.log(error);
+                        toast.error(error.message);
                       }
                     }}
                   >
