@@ -82,7 +82,7 @@ const RegisterDiv = () => {
                       data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="2000"
-                      className="register-btn  h-[6vh] w-[46vw] mt-8 rounded-md bg-crypticOrange text-[#fff] font-medium md:w-[18vw]"
+                      className="register-btn h-[6vh] w-[46vw] mt-8 rounded-md bg-crypticOrange text-[#fff] font-medium md:w-[18vw]"
                     >
                       Register
                     </button>
