@@ -14,6 +14,8 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import "./App.css";
 import { auth } from "./services/firebase";
 import FormWrapper from "./components/Form/FormWrapper";
+import NotFound404 from "./components/404/404";
+import NotAuth401 from "./components/401/401";
 
 function App() {
   const [user, loading, error] = useAuthState(auth);
@@ -52,7 +54,9 @@ function App() {
             <Route path="/welcome" element={<Welcome />} />
             <Route path="/form" element={<FormWrapper />} />
           </>
-        ) : null}{" "}
+        ) : null}
+        <Route path="/401" element={<NotAuth401 />} />
+        <Route path="*" element={<NotFound404 />} />
       </Routes>
     </div>
   );
