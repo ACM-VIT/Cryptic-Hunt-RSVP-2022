@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
   margin: auto;
+  padding: 10% 0vw;
 }
 
 .main-heading {
@@ -57,4 +57,16 @@ button {
   border-radius: 5px;
   color: #fff;
   border: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding: 25% 0vw;
+  }
+
+  .checkin-form {
+    font-size: 0.8rem;
+    width: 60%;
+    margin: 2% auto;
+  }
 }
