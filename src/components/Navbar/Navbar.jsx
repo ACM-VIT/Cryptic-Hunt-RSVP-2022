@@ -52,7 +52,6 @@ const Navbar = () => {
                   onClick={async () => {
                     await signOut(auth);
                     navigate(`/`);
-                    console.log("signed out");
                   }}
                   className="nav__links"
                 >
@@ -69,7 +68,6 @@ const Navbar = () => {
               onClick={async () => {
                 await signOut(auth);
                 navigate(`/`);
-                console.log("signed out");
               }}
               className="logout"
             >
