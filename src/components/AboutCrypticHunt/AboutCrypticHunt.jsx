@@ -57,14 +57,21 @@ const AboutCrypticHunt = () => {
       <div className="app__demo__div">
         <img src={appDemo} className="appDemo" alt="Cryptic Hunt App Demo" />
       </div>
-      <div className="text-3xl font-bold	pb-4 ">Coming Soon on</div>
+      {/* <div className="text-3xl font-bold	pb-4 ">Coming Soon on</div> */}
       <div className="store__badge">
-        {/* <a href="https://testflight.apple.com/join/VghTlqNj"> */}
-        <img src={appStore} className="badge" alt="App and Play Store Demo" />
-        {/* </a> */}
-        {/* <a href="https://play.google.com/store/apps/details?id=com.acmvit.cryptic_hunt"> */}
-        <img src={playStore} className="badge" alt="App and Play Store Demo" />
-        {/* </a> */}
+        <a href="https://testflight.apple.com/join/VghTlqNj" target="_blank">
+          <img src={appStore} className="badge" alt="App and Play Store Demo" />
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.acmvit.cryptic_hunt"
+          target="_blank"
+        >
+          <img
+            src={playStore}
+            className="badge"
+            alt="App and Play Store Demo"
+          />
+        </a>
       </div>
       <p
         id="About"
