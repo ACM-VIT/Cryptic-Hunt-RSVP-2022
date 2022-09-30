@@ -107,11 +107,11 @@ const RegisterDiv = () => {
               >
                 The Cryptic Hunt app is your one stop destination for all your
                 Hunt related needs. Get on the trail with the leaderboard,
-                questions and timeline just one click away! The app will go live
-                soon, so RSVP to get more updates.
+                questions and timeline just one click away! The app is live now,
+                you can install it using the links provided above.
               </p>
               <div className={`${`text-center md:mt-[12vh]`}`}>
-                <input
+                {/* <input
                   // data-aos="fade-up"
                   // data-aos-duration="2000"
                   // data-ao-anchor-placement="top-bottom"
@@ -122,19 +122,18 @@ const RegisterDiv = () => {
                   className={`${
                     classes.inputBox
                   } ${`relative w-[40vh] h-[9vh] rounded-l-md md:h-[7.84vh]`}`}
-                ></input>
-                <button
-                  // data-aos="fade-up"
-                  // data-aos-anchor-placement="top-bottom"
-                  // data-aos-duration="2000"
-                  type="submit"
-                  className="h-[9vh] w-[16vh] rounded-r-md md:h-[7.84vh] bg-[#18191F] text-[#fff] font-medium"
-                  onClick={(e) => {
-                    addUserToList();
-                  }}
-                >
-                  RSVP
-                </button>
+                ></input> */}
+                <a href="#apps">
+                  <button
+                    // data-aos="fade-up"
+                    // data-aos-anchor-placement="top-bottom"
+                    // data-aos-duration="2000"
+                    type="submit"
+                    className="h-[9vh] w-[30vw] rounded-r-md md:h-[7.84vh] bg-[#18191F] text-[#fff] font-medium"
+                  >
+                    Install
+                  </button>
+                </a>
               </div>
             </div>
             <img className={`${classes.image}`} alt="acm" src={image}></img>

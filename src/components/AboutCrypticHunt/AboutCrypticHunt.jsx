@@ -54,7 +54,7 @@ const AboutCrypticHunt = () => {
       >
         Check In Now!
       </button>
-      <div className="app__demo__div">
+      <div className="app__demo__div" id="apps">
         <img src={appDemo} className="appDemo" alt="Cryptic Hunt App Demo" />
       </div>
       {/* <div className="text-3xl font-bold	pb-4 ">Coming Soon on</div> */}
