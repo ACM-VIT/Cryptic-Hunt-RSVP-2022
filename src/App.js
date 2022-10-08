@@ -55,11 +55,17 @@ function App() {
             <Route path="/form" element={<FormWrapper />} />
           </>
         ) : null}
+        <Route path="/solutions" element={<Solutions />} />
         <Route path="/401" element={<NotAuth401 />} />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
     </div>
   );
+}
+
+function Solutions() {
+  window.location.href = "https://github.com/ACM-VIT/Cryptic-Hunt-22-solutions";
+  return null;
 }
 
 export default App;
