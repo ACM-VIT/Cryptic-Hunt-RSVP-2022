@@ -15,7 +15,7 @@ const FormWrapper = () => {
 
   useEffect(() => {
     const asyncFn = async () => {
-      const BACKEND_URL = `https://crypticbackend.acmvit.in`;
+      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
       const token = await getToken();
 
       const res = await fetch(`${BACKEND_URL}/verify/getDetails`, {

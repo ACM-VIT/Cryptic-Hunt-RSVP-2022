@@ -99,9 +99,9 @@ const AboutCrypticHunt = () => {
           data-aos-duration="2000"
           data-aos-anchor-placement="top-bottom"
         >
-          <b>Date:</b> 30th September to 1st October
+          <b>Date:</b> 23rd September to 24th September 2023
           <br />
-          <b>Time:</b> 8:00 A.M. TO 5:00 P.M.
+          <b>Time:</b> 11:30 A.M. TO 5:00 P.M.
         </span>
       </p>
     </section>

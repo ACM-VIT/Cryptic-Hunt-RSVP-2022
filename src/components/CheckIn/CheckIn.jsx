@@ -51,7 +51,7 @@ const RegisterDiv = () => {
                     <br />
                     <br />
                     <b>1.</b> Make sure that the details entered in the Check-In
-                    form are the same as those on the graVITas’22 website.{" "}
+                    form are the same as those on the graVITas’23 website.{" "}
                     <br />
                     <b>2.</b> You will also have to check in for the
                     participants for whom you have paid. You have to check-in

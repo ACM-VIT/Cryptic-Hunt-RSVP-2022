@@ -21,13 +21,14 @@ const Form = ({ count }) => {
         name: "",
         email: "",
         number: "",
+        gender: "",
         isVit: false,
         college: "",
         reg: "",
         isUser: false,
         id: "",
       },
-    })
+    }),
   );
 
   const [currentView, setCurrentView] = useState(0);
@@ -102,7 +103,7 @@ const Form = ({ count }) => {
   };
 
   const asyncFn = async () => {
-    const BACKEND_URL = `https://crypticbackend.acmvit.in`;
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
     const token = await getToken();
     const body = JSON.stringify({
       data: users.map((v) => ({
@@ -194,6 +195,16 @@ const Form = ({ count }) => {
           name="number"
           placeholder="+XX XXXXXXXXXX"
           value={users[currentView].number}
+          onChange={onChange}
+        />
+        <br />
+        <label>Gender</label>
+        <br />
+        <input
+          type="tel"
+          name="number"
+          placeholder="+XX XXXXXXXXXX"
+          value={users[currentView].gender}
           onChange={onChange}
         />
         <br />
