@@ -15,7 +15,7 @@ export default [
     id: "3",
     question: "When will the event be held?",
     answer:
-      "The event will be held on two days, 30th September 2022 and 1st October 2022.",
+      "The event will be held on two days, 23rd September 2023 and 24th September 2023.",
   },
   {
     id: "4",
@@ -27,7 +27,7 @@ export default [
     id: "5",
     question: "Is the event going to have a participating fee?",
     answer:
-      "The Hybrid Cryptic Hunt has a participation fee of ₹250 per person for the entire two-day event.",
+      "The Hybrid Cryptic Hunt has a participation fee of ₹200 per person for the entire two-day event.",
   },
   {
     id: "6",

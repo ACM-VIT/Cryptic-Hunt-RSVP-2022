@@ -21,13 +21,14 @@ const Form = ({ count }) => {
         name: "",
         email: "",
         number: "",
+        gender: "",
         isVit: false,
         college: "",
         reg: "",
         isUser: false,
         id: "",
       },
-    })
+    }),
   );
 
   const [currentView, setCurrentView] = useState(0);
@@ -63,6 +64,8 @@ const Form = ({ count }) => {
       toast.error("Fill all the fields!");
     } else if (emailRegEx.test(users[currentView].email.trim()) === false) {
       toast.error("Incorrect format for email!");
+    } else if (users[currentView].gender === "") {
+      toast.error("Please select a gender");
     } else if (phoneRegEx.test(users[currentView].number) === false) {
       toast.error("Invalid phone number!");
     } else if (
@@ -93,6 +96,7 @@ const Form = ({ count }) => {
 
   const onChange = (e) => {
     const currUsers = [...users.map((v) => ({ ...v }))];
+    console.log(currUsers);
     if (e.target.name === "isVit" || e.target.name === "isUser") {
       currUsers[currentView][e.target.name] = e.target.checked;
     } else {
@@ -102,7 +106,7 @@ const Form = ({ count }) => {
   };
 
   const asyncFn = async () => {
-    const BACKEND_URL = `https://crypticbackend.acmvit.in`;
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
     const token = await getToken();
     const body = JSON.stringify({
       data: users.map((v) => ({
@@ -110,6 +114,7 @@ const Form = ({ count }) => {
         regno: v.reg ?? null,
         name: v.name,
         mobile: v.number,
+        gender: v.gender,
         college: v.isVit == true ? "VIT Vellore" : v.college,
         appleId: v.isUser == true ? v.id : null,
       })),
@@ -196,6 +201,20 @@ const Form = ({ count }) => {
           value={users[currentView].number}
           onChange={onChange}
         />
+        <br />
+        <label>Gender</label>
+        <br />
+        <select
+          name="gender"
+          onChange={onChange}
+          value={users[currentView].gender}
+        >
+          <option value="" disabled selected>
+            Choose a gender
+          </option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
         <br />
         <input
           type="checkbox"
