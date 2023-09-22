@@ -64,6 +64,8 @@ const Form = ({ count }) => {
       toast.error("Fill all the fields!");
     } else if (emailRegEx.test(users[currentView].email.trim()) === false) {
       toast.error("Incorrect format for email!");
+    } else if (users[currentView].gender === "") {
+      toast.error("Please select a gender");
     } else if (phoneRegEx.test(users[currentView].number) === false) {
       toast.error("Invalid phone number!");
     } else if (
@@ -94,6 +96,7 @@ const Form = ({ count }) => {
 
   const onChange = (e) => {
     const currUsers = [...users.map((v) => ({ ...v }))];
+    console.log(currUsers);
     if (e.target.name === "isVit" || e.target.name === "isUser") {
       currUsers[currentView][e.target.name] = e.target.checked;
     } else {
@@ -111,6 +114,7 @@ const Form = ({ count }) => {
         regno: v.reg ?? null,
         name: v.name,
         mobile: v.number,
+        gender: v.gender,
         college: v.isVit == true ? "VIT Vellore" : v.college,
         appleId: v.isUser == true ? v.id : null,
       })),
@@ -200,13 +204,17 @@ const Form = ({ count }) => {
         <br />
         <label>Gender</label>
         <br />
-        <input
-          type="tel"
-          name="number"
-          placeholder="+XX XXXXXXXXXX"
-          value={users[currentView].gender}
+        <select
+          name="gender"
           onChange={onChange}
-        />
+          value={users[currentView].gender}
+        >
+          <option value="" disabled selected>
+            Choose a gender
+          </option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
         <br />
         <input
           type="checkbox"
