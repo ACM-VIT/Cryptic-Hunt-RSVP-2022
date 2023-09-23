@@ -59,9 +59,6 @@ const AboutCrypticHunt = () => {
       </div>
       {/* <div className="text-3xl font-bold	pb-4 ">Coming Soon on</div> */}
       <div className="store__badge">
-        <a href="https://testflight.apple.com/join/VghTlqNj" target="_blank">
-          <img src={appStore} className="badge" alt="App and Play Store Demo" />
-        </a>
         <a
           href="https://play.google.com/store/apps/details?id=com.acmvit.cryptic_hunt"
           target="_blank"
