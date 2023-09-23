@@ -162,7 +162,7 @@ const Form = ({ count }) => {
         <div>
           Enter the correct details
           <br />
-          (same as your graVITas’22 account){" "}
+          (same as your graVITas’23 account){" "}
         </div>
       ) : (
         <div>Enter the details for everyone you’ve paid for</div>
